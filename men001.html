@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MenMap@Mito|らぁめん蓮華 海老汐らぁめん</title>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Noto+Sans+JP:100,300,400|Noto+Serif+JP:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="./css/menmap.css">
+</head>
+<body>
+    <header id="men_page">
+        <div id="title">
+            <div class="title_line">
+                    <h2 class="title_logo">Men Mep @Mito</h2>
+            </div>
+
+            <ul id="nav">
+                <li><a href="./index.html#main_map">
+                    <div class="nav_btn gotomap"><p>地図から探す</p></div>
+                </a></li>
+                <li><a href="./index.html#collection">
+                    <div class="nav_btn collection"><p>麺コレクション</p></div>
+                </a></li>
+                <li><a href="info.html">
+                    <div class="nav_btn about"><p><span>MenMap@Mito</span>について</p></div>
+                </a></li>
+            </ul>
+       </div>
+    </header>
+
+    <div id="men_data">
+        <div id="data_title">
+            <p>- <span>Men Data</span> -</p>
+        </div>
+        <div id="data_area">
+            <div id="men_img"></div>
+            <div id="men_detail">
+                <div class="men_area">
+                    <p># 内原・赤塚エリア</p>
+                </div>
+                <div class="name_rbn">
+                    <p class="name">海老汐らぁめん</p>
+                    <p class="price">¥830</p>
+                </div>
+                <div class="feature">
+                    <p>塩魚介スープ＋海老のリアル感</p>
+                </div>
+                <div class="detail_text">
+                    <p>魚介ベースの「汐らぁめん」に海老がプラス。海老は粗く砕かれているため、身や殻などの海老のリアルな風味を楽しめる。</p>
+                    <p>長い穂先メンマ、大きめで噛みごたえのあるチャーシュー、麺はプリプリした食感のちぢれ中太麺。スープが主役のシンプルな構成。</p>
+                    <p>「八分盛」にして100円引にもできる。</p>
+                </div>
+            </div>
+            <div id="shop_detail">
+                <div class="shop_rbn">
+                    <p class="subname">らぁめん</p>
+                    <p class="name">蓮華</p>
+                </div>
+                <table id="shop_table">
+                    <tr>
+                        <th class="adress">住所</th>
+                        <td>水戸市姫子1−117−1</td>
+                    </tr>
+                    <tr>
+                        <th class="hour">営業時間</th>
+                        <td>
+                            <p>9:00~15:00（金・土・日）</p>
+                            <p>17:00~20:30</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="close">定休日</th>
+                        <td>月曜日・日曜日</td>
+                    </tr>
+                    <tr>
+                        <th class="parking">駐車場</th>
+                        <td>あり</td>
+                    </tr>
+                    <tr>
+                        <th class="web">ＨＰ</th>
+                        <td>
+                            <div class="snsmark"></div>
+                            <a href="https://twitter.com/ramen_renge1217">https://twitter.com/ramen_renge1217</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="shop_map"></div>
+        </div>
+    </div>
+    <!-- main_map -->
+    
+    <div id="another">
+        <div id="ano_title">
+            <p>このお店のラーメン</p>
+            <span>- Another Men -</span>
+        </div>
+
+        <ul class="card_area">
+            <li class="men1"><a href="./men001.html">
+                <div class="card">
+                    <div class="men_img men001_img"></div>
+                    <p class="men_name1">海老汐らぁめん</p>
+                    <p class="men_name2"></p>
+                    <p class="shop_name"><strong>らぁめん</strong>蓮華</p>
+                </div>
+            </a></li>
+            <li class="men2"><a href="./men001.html">
+                <div class="card">
+                    <div class="men_img men002_img"></div>
+                    <p class="men_name1">特製龍ひげ</p>
+                    <p class="men_name2">塩らぁめん</p>
+                    <p class="shop_name"><strong></strong>龍のひげ</p>
+                </div>
+            </a></li>
+            <li class="men3"><a href="./men001.html">
+                <div class="card">
+                    <div class="men_img men003_img"></div>
+                    <p class="men_name1">鶏白湯</p>
+                    <p class="men_name2"></p>
+                    <p class="shop_name"><strong>鶏そば専門店</strong>とりだけ</p>
+                </div>
+            </a></li>
+        </ul>
+
+        <div id="sub_nav">
+                <li><a href="./index.html#collection">
+                    <div class="nav_btn collection"><p># 赤塚・内原エリア</p></div>
+                </a></li>
+                <li><a href="./index.html#main_map">
+                    <div class="nav_btn gotomap"><p><span>Map</span>に戻る</p></div>
+                </a></li>
+        </div>
+
+    </div>
+    <!-- #another -->
+
+    <footer>
+        <p>Copyright <span>Men Map @Mito</span> All Rights Reserved.</p>
+    </footer>
+    <script>
+        var map;
+        var center = {lat: 36.3830901, lng: 140.4328232};
+        var marker;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('shop_map'), {
+            center: center,
+            zoom: 17
+            });
+            marker = new google.maps.Marker({ // マーカーの追加
+                position: center, // マーカーを立てる位置を指定
+                map: map // マーカーを立てる地図を指定
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-3d2nxhRolq4FO4pLmfE0F6_i7X6dxyk&callback=initMap"async defer></script> 
+</body>
+</html>

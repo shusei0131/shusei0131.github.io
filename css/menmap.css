@@ -1,0 +1,964 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+}
+
+body span {
+  font-family: "Kaushan Script", cursive;
+}
+
+body .men001_img {
+  background-image: url(../image/renge01.jpg);
+}
+
+body .men002_img {
+  background-image: url(../image/ryunohige01.jpg);
+}
+
+body .men003_img {
+  background-image: url(../image/toridake01.jpg);
+}
+
+header #title {
+  width: 100%;
+  height: 800px;
+  background-image: url(../image/header_bg01.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+header #title .title_line {
+  background-color: rgba(51, 38, 38, 0.6);
+  width: 100%;
+  position: absolute;
+  top: 40%;
+}
+
+header #title .title_line h2 {
+  font-family: "Kaushan Script", cursive;
+  color: white;
+  margin: 20px;
+  margin-left: 20%;
+  font-size: 4rem;
+}
+
+header #title #nav {
+  list-style: none;
+  position: absolute;
+  top: 60%;
+  right: 0;
+  margin-right: 100px;
+}
+
+header #title #nav a {
+  text-decoration: none;
+}
+
+header #title #nav .nav_btn {
+  width: 300px;
+  background-color: rgba(235, 108, 153, 0.9);
+  margin: 5px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+header #title #nav .nav_btn p {
+  margin: 0;
+  padding: 15px 15px;
+  color: white;
+  font-size: 2.4rem;
+  font-family: "Noto Serif JP", sans-serif;
+}
+
+header #title #down_mark {
+  background-image: url(../image/down.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  width: 45px;
+  height: 30px;
+  position: absolute;
+  bottom: 2%;
+  left: 48%;
+}
+
+#main_map {
+  background-color: #33261E;
+  margin: 30px 0 60px;
+  padding-bottom: 40px;
+}
+
+#main_map #map_title {
+  color: white;
+  text-align: center;
+  padding: 15px 0 10px;
+}
+
+#main_map #map_title p {
+  margin: 0;
+  font-size: 3rem;
+  font-family: "Noto Serif JP", sans-serif;
+}
+
+#main_map #map_title span {
+  font-size: 2.5rem;
+}
+
+#main_map #map_area {
+  background-color: white;
+  width: 950px;
+  height: 550px;
+  margin: 10px auto;
+  border-radius: 10px;
+  padding: 10px 0;
+  position: relative;
+}
+
+#main_map #map_area #gmap {
+  width: 80%;
+  height: 92%;
+  margin: 0px;
+  position: absolute;
+  top: 4%;
+  left: 2%;
+  z-index: 2;
+}
+
+#main_map #map_area #map_btn {
+  list-style: none;
+  width: 60%;
+  position: absolute;
+  top: 20%;
+  right: 2%;
+  z-index: 1;
+}
+
+#main_map #map_area #map_btn a {
+  text-decoration: none;
+}
+
+#main_map #map_area #map_btn .map_rbn {
+  height: 50px;
+  margin: 10px 0;
+  background-color: #EB6C99;
+  text-align: right;
+}
+
+#main_map #map_area #map_btn .map_rbn h5 {
+  color: #33261E;
+  font-family: "Noto Sans JP", sans-serif;
+  margin: 0;
+  margin-right: 20px;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+#main_map #map_area #map_btn .map_rbn p {
+  color: #33261E;
+  margin: 0;
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+#collection #co_title {
+  background-image: url(../image/ribbon.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+#collection #co_title p {
+  font-size: 3rem;
+  font-family: "Noto Serif JP", sans-serif;
+  color: white;
+  margin: 0 auto;
+  padding-top: 5px;
+}
+
+#collection #co_title span {
+  font-size: 2.5rem;
+  color: white;
+}
+
+#collection #hash_area {
+  position: relative;
+  height: 130px;
+  margin-bottom: 50px;
+}
+
+#collection #hash_area .area1 {
+  position: absolute;
+  top: 10%;
+  left: 35%;
+}
+
+#collection #hash_area .area2 {
+  position: absolute;
+  top: 10%;
+  left: 55%;
+}
+
+#collection #hash_area .area3 {
+  position: absolute;
+  top: 60%;
+  left: 25%;
+}
+
+#collection #hash_area .area4 {
+  position: absolute;
+  top: 60%;
+  left: 45%;
+}
+
+#collection #hash_area .area5 {
+  position: absolute;
+  top: 60%;
+  left: 65%;
+}
+
+#collection #hash_area a {
+  text-decoration: none;
+}
+
+#collection #hash_area a p {
+  color: #EB6C99;
+  font-family: "Noto Sans JP", sans-serif;
+  text-decoration: underline;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+#collection .card_area {
+  width: 950px;
+  padding: 0;
+  margin: 0 auto 160px;
+}
+
+#collection .card_area li {
+  list-style: none;
+  float: left;
+  width: 30%;
+  height: 410px;
+  margin: 5% 5% 0 0;
+}
+
+#collection .card_area li:nth-child(3n) {
+  margin-right: 0;
+}
+
+#collection .card_area li a {
+  text-decoration: none;
+}
+
+#collection .card_area li a .card {
+  background-image: url(../image/more.jpg);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 20% auto;
+  border-radius: 10px 10px 0 10px;
+  box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.4);
+  height: 100%;
+}
+
+#collection .card_area li a .card .men_img {
+  background-color: #d8d7d1;
+  background-size: cover;
+  height: 285px;
+  border-radius: 10px 10px 0 0;
+}
+
+#collection .card_area li a .card .men_name1 {
+  font-family: "Noto Serif JP", sans-serif;
+  font-size: 2.2rem;
+  color: #33261E;
+  padding-left: 40px;
+  height: 30px;
+  margin: 15px auto 0;
+}
+
+#collection .card_area li a .card .men_name2 {
+  font-family: "Noto Serif JP", sans-serif;
+  font-size: 2.2rem;
+  color: #33261E;
+  padding-right: 40px;
+  height: 30px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+#collection .card_area li a .card .shop_name {
+  font-family: "Noto Serif JP", sans-serif;
+  font-size: 1.9rem;
+  color: #33261E;
+  padding: 10px 15px;
+  margin: 0;
+}
+
+#collection .card_area li a .card .shop_name strong {
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 0 10px;
+}
+
+#collection .card_area:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+footer {
+  widows: 100%;
+  background-color: #33261E;
+  text-align: center;
+}
+
+footer p {
+  color: white;
+  font-family: "Noto Serif JP", sans-serif;
+  font-size: 2rem;
+  padding: 8px;
+  margin: 0 auto;
+}
+
+header#men_page #title {
+  height: 200px;
+  background-image: url(../image/men_header_bg.jpg);
+}
+
+header#men_page #title .title_line {
+  top: 15%;
+}
+
+header#men_page #title .title_line h2 {
+  margin: 7px;
+  margin-left: 15%;
+}
+
+header#men_page #title #nav {
+  margin-right: 5%;
+}
+
+header#men_page #title #nav li {
+  float: left;
+}
+
+header#men_page #title #nav .nav_btn {
+  width: 250px;
+}
+
+header#men_page #title #nav .nav_btn p {
+  padding: 5px;
+  font-size: 2rem;
+}
+
+#men_data {
+  background-color: #33261E;
+  margin: 30px 0 60px;
+  padding-bottom: 50px;
+}
+
+#men_data #data_title {
+  color: white;
+  text-align: center;
+  padding: 15px 0 8px;
+}
+
+#men_data #data_title p {
+  font-size: 5rem;
+  margin: 0;
+}
+
+#men_data #data_area {
+  background-color: white;
+  width: 900px;
+  margin: 10px auto;
+  border-radius: 10px;
+  padding: 3%;
+  position: relative;
+  overflow: hidden;
+}
+
+#men_data #data_area #men_img {
+  float: left;
+  width: 50%;
+  height: 0;
+  padding-bottom: 50%;
+  margin: 0;
+  margin-bottom: 40px;
+  background: url(../image/renge01.jpg);
+  background-size: cover;
+  box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.4);
+}
+
+#men_data #data_area #men_detail {
+  width: 50%;
+  float: left;
+  margin-bottom: 60px;
+}
+
+#men_data #data_area #men_detail .men_area p {
+  color: #EB6C99;
+  font-size: 1.7rem;
+  text-align: right;
+  padding-right: 30px;
+  margin: 0;
+}
+
+#men_data #data_area #men_detail .name_rbn {
+  font-family: "Noto Serif JP", sans-serif;
+  background-image: url(../image/men_rbn.jpg);
+  background-position: right;
+  height: 60px;
+  line-height: 60px;
+}
+
+#men_data #data_area #men_detail .name_rbn .name {
+  font-size: 2.5rem;
+  display: inline;
+  letter-spacing: 0.4rem;
+  padding: 0 50px;
+}
+
+#men_data #data_area #men_detail .name_rbn .price {
+  font-size: 2.1rem;
+  display: inline;
+  letter-spacing: 0.3rem;
+}
+
+#men_data #data_area #men_detail .feature p {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "Noto Serif JP", sans-serif;
+  letter-spacing: 0.4rem;
+  margin: 20px 20px;
+}
+
+#men_data #data_area #men_detail .detail_text {
+  padding: 0px 35px;
+}
+
+#men_data #data_area #men_detail .detail_text p {
+  margin: 10px 0;
+  font-size: 1.9rem;
+  font-family: "Noto Serif JP", sans-serif;
+  letter-spacing: 0.1rem;
+  line-height: 1.6;
+}
+
+#men_data #shop_detail {
+  width: 50%;
+  float: left;
+}
+
+#men_data #shop_detail .shop_rbn {
+  font-family: "Noto Serif JP", sans-serif;
+  background-image: url(../image/men_rbn.jpg);
+  background-position: left;
+  height: 60px;
+  line-height: 60px;
+}
+
+#men_data #shop_detail .shop_rbn .subname {
+  font-size: 2.1rem;
+  display: inline;
+  letter-spacing: 0.4rem;
+  padding-left: 120px;
+  padding-right: 30px;
+}
+
+#men_data #shop_detail .shop_rbn .name {
+  font-size: 2.7rem;
+  display: inline;
+  letter-spacing: 0.8rem;
+}
+
+#men_data #shop_detail #shop_table {
+  font-family: "Noto Serif JP", sans-serif;
+  border-spacing: 25px 33px;
+  margin-left: 3%;
+}
+
+#men_data #shop_detail #shop_table th {
+  background-color: #33261E;
+  color: white;
+  font-size: 1.6rem;
+  width: 90px;
+}
+
+#men_data #shop_detail #shop_table td {
+  font-size: 2rem;
+}
+
+#men_data #shop_detail #shop_table td p {
+  margin: 0;
+  font-size: 1.7rem;
+}
+
+#men_data #shop_detail #shop_table td .snsmark {
+  float: left;
+  width: 2rem;
+  height: 2rem;
+  background-image: url(../image/twitter.jpg);
+  background-size: contain;
+  margin: auto auto;
+}
+
+#men_data #shop_detail #shop_table td a {
+  float: left;
+  font-size: 1.3rem;
+  color: #EB6C99;
+  display: block;
+  padding-left: 5px;
+}
+
+#men_data #shop_map {
+  float: left;
+  width: 50%;
+  height: 450px;
+  box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.4);
+}
+
+#another #ano_title {
+  background-image: url(../image/ribbon.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+#another #ano_title p {
+  font-size: 3rem;
+  font-family: "Noto Serif JP", sans-serif;
+  color: white;
+  margin: 0 auto;
+  padding-top: 5px;
+}
+
+#another #ano_title span {
+  font-size: 2.5rem;
+  color: white;
+}
+
+#another .card_area {
+  width: 950px;
+  padding: 0;
+  margin: 0 auto 40px;
+}
+
+#another .card_area li {
+  list-style: none;
+  float: left;
+  width: 30%;
+  height: 410px;
+  margin: 5% 5% 0 0;
+}
+
+#another .card_area li:nth-child(3n) {
+  margin-right: 0;
+}
+
+#another .card_area li a {
+  text-decoration: none;
+}
+
+#another .card_area li a .card {
+  background-image: url(../image/more.jpg);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 20% auto;
+  border-radius: 10px 10px 0 10px;
+  box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.4);
+  height: 100%;
+}
+
+#another .card_area li a .card .men_img {
+  background-color: #d8d7d1;
+  background-size: cover;
+  height: 285px;
+  border-radius: 10px 10px 0 0;
+}
+
+#another .card_area li a .card .men_name1 {
+  font-family: "Noto Serif JP", sans-serif;
+  font-size: 2.2rem;
+  color: #33261E;
+  padding-left: 40px;
+  height: 30px;
+  margin: 15px auto 0;
+}
+
+#another .card_area li a .card .men_name2 {
+  font-family: "Noto Serif JP", sans-serif;
+  font-size: 2.2rem;
+  color: #33261E;
+  padding-right: 40px;
+  height: 30px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+#another .card_area li a .card .shop_name {
+  font-family: "Noto Serif JP", sans-serif;
+  font-size: 1.9rem;
+  color: #33261E;
+  padding: 10px 15px;
+  margin: 0;
+}
+
+#another .card_area li a .card .shop_name strong {
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 0 10px;
+}
+
+#another .card_area:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#another #sub_nav {
+  list-style: none;
+  width: 420px;
+  margin: 0 auto 100px;
+  overflow: hidden;
+}
+
+#another #sub_nav a {
+  text-decoration: none;
+}
+
+#another #sub_nav .nav_btn {
+  width: 200px;
+  background-color: #EB6C99;
+  margin: 5px;
+  border-radius: 6px;
+  text-align: center;
+  float: left;
+}
+
+#another #sub_nav .nav_btn p {
+  margin: 0;
+  padding: 10px 10px;
+  color: white;
+  font-size: 2rem;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+#about {
+  width: 950px;
+  margin: 0 auto;
+}
+
+#about #about_title {
+  background-image: url(../image/ribbon.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  text-align: center;
+  padding-bottom: 30px;
+  margin-top: 30px;
+}
+
+#about #about_title p {
+  font-size: 2.4rem;
+  font-family: "Noto Serif JP", sans-serif;
+  color: white;
+  margin: 0 auto;
+  padding: 15px 0 10px;
+}
+
+#about #about_title span {
+  font-size: 3rem;
+  color: white;
+  letter-spacing: 0.3rem;
+}
+
+#about .title_copy p {
+  font-size: 3rem;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 0.5rem;
+}
+
+#about .title_text {
+  overflow: hidden;
+}
+
+#about .title_text .t1, #about .title_text .t2, #about .title_text .t3 {
+  float: left;
+  width: 50%;
+  padding-left: 8%;
+}
+
+#about .title_text .logo_mark {
+  float: right;
+  width: 40%;
+  padding-bottom: 40%;
+  background-image: url(../image/logo_mark.jpg);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+#about .title_text p {
+  font-size: 1.9rem;
+  font-family: "Noto Serif JP", sans-serif;
+  letter-spacing: 0.4rem;
+}
+
+#making {
+  background-color: #33261E;
+  margin: 50px 0 60px;
+  padding-bottom: 50px;
+}
+
+#making #making_title {
+  color: white;
+  text-align: center;
+  padding: 15px 0 8px;
+}
+
+#making #making_title p {
+  font-size: 4rem;
+  margin: 0;
+}
+
+#making #making_area {
+  background-color: white;
+  width: 900px;
+  margin: 10px auto;
+  border-radius: 10px;
+  padding: 2%;
+}
+
+#making #making_area .copy {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 300;
+  font-size: 3rem;
+  text-align: center;
+  margin: 20px 0;
+  letter-spacing: 0.5rem;
+}
+
+#making #making_area .making_text {
+  font-family: "Noto Serif JP", sans-serif;
+  font-size: 1.9rem;
+  line-height: 3.5rem;
+  width: 80%;
+  margin: 20px auto 25px;
+  letter-spacing: 0.3rem;
+}
+
+#making #making_area #new_men .new_title {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 300;
+  font-size: 2.3rem;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 50px;
+}
+
+#making #making_area #new_men .card_area {
+  width: 80%;
+  padding: 0;
+  margin: 0 auto 40px;
+}
+
+#making #making_area #new_men .card_area li {
+  list-style: none;
+  float: left;
+  width: 30%;
+  height: 320px;
+  margin: 5% 5% 0 0;
+}
+
+#making #making_area #new_men .card_area li:nth-child(3n) {
+  margin-right: 0;
+}
+
+#making #making_area #new_men .card_area li a {
+  text-decoration: none;
+}
+
+#making #making_area #new_men .card_area li a .card {
+  background-image: url(../image/more.jpg);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 20% auto;
+  border-radius: 10px 10px 0 10px;
+  box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.4);
+  height: 100%;
+}
+
+#making #making_area #new_men .card_area li a .card .men_img {
+  background-color: #d8d7d1;
+  background-size: contain;
+  height: 0px;
+  padding-bottom: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+#making #making_area #new_men .card_area li a .card .men_name1 {
+  font-family: "Noto Serif JP", sans-serif;
+  font-size: 2.0rem;
+  color: #33261E;
+  padding-left: 40px;
+  height: 30px;
+  margin: 10px auto 0;
+}
+
+#making #making_area #new_men .card_area li a .card .men_name2 {
+  font-family: "Noto Serif JP", sans-serif;
+  font-size: 2.0rem;
+  color: #33261E;
+  padding-right: 40px;
+  height: 30px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+#making #making_area #new_men .card_area li a .card .shop_name {
+  font-family: "Noto Serif JP", sans-serif;
+  font-size: 1.7rem;
+  color: #33261E;
+  padding: 3px 15px;
+  margin: 0;
+}
+
+#making #making_area #new_men .card_area li a .card .shop_name strong {
+  font-size: 1.3rem;
+  font-weight: 200;
+  padding: 0 10px;
+}
+
+#making #making_area #new_men .card_area:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#attention {
+  padding-bottom: 70px;
+}
+
+#attention #at_title {
+  background-image: url(../image/ribbon.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+#attention #at_title p {
+  font-size: 3rem;
+  font-family: "Noto Serif JP", sans-serif;
+  color: white;
+  margin: 0 auto;
+  padding-top: 5px;
+}
+
+#attention #at_title span {
+  font-size: 2.5rem;
+  color: white;
+}
+
+#attention .at {
+  width: 750px;
+  margin: 40px auto;
+}
+
+#attention .at .at_sub {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 300;
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+#attention .at .at_text {
+  padding-left: 5%;
+  font-family: "Noto Serif JP", sans-serif;
+  font-size: 1.9rem;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+#contact {
+  width: 800px;
+  margin: 0 auto 150px;
+  background-color: #33261E;
+  padding: 10px 100px 70px;
+  border-radius: 15px;
+}
+
+#contact .con_title {
+  color: white;
+  font-size: 4rem;
+  margin: 15px 0;
+  letter-spacing: 0.6rem;
+}
+
+#contact .con_area {
+  margin: 0 auto;
+  background-color: white;
+  padding: 10px 5% 40px;
+}
+
+#contact .con_area table {
+  border-spacing: 20px 30px;
+  width: 100%;
+}
+
+#contact .con_area table tr th {
+  width: 25%;
+  text-align: left;
+  font-size: 1.6rem;
+  font-family: "Noto Serif JP", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  vertical-align: top;
+}
+
+#contact .con_area table tr td input, #contact .con_area table tr td textarea {
+  border: #33261E 1px solid;
+  font-size: 2rem;
+  width: 75%;
+}
+
+#contact .con_area table tr td .name_box {
+  width: 200px;
+  height: 25px;
+}
+
+#contact .con_area table tr td .address_box {
+  width: 100%;
+  height: 25px;
+}
+
+#contact .con_area table tr td .content_box {
+  width: 100%;
+  height: 200px;
+}
+
+#contact .con_area .send_btn {
+  width: 100px;
+  height: 28px;
+  border-radius: 5px;
+  background-color: #EB6C99;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#contact .con_area .send_btn p {
+  font-family: "Noto Serif JP", sans-serif;
+  font-size: 1.8rem;
+  margin: 0;
+  color: white;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+        
+    <style>
+        .tb-cell {
+            display: table;
+            width: 300px;
+            margin: 20px auto 40px auto;
+            text-align: left;
+            }
+            .tb-cell .row {
+            display: table-row;
+            }
+            .tb-cell .row .cell {
+            display: table-cell;
+            border: 1px solid #ddd;
+            padding: 10px;
+            vertical-align: middle;
+            color: #fff;
+            }
+            .tb-cell .row .cell:nth-child(odd) {
+            width: 100px;
+            }
+            .tb-cell .row .cell:nth-child(even) {
+            width: 200px;
+            }
+            .mail-form .row .cell {
+            padding: 5px;
+            }
+            .mail-form .row .cell:nth-child(1) {
+            background: #9fb7d4;
+            }
+            .mail-form .row .cell:nth-child(2) {
+            background: #ccc;
+            }
+            input[type="text"],
+            input[type="email"] {
+            height: 30px;
+            font-size: 16px;
+            }
+            textarea {
+            height: 100px;
+            font-size: 16px;
+            }
+            button {
+            color: #fff;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            }
+            button[type="button"] {
+            margin-left: 10px;
+            }
+            button[type="button"],
+            button[type="submit"] {
+            background: #afc6e2;
+            }
+            button[type="reset"] {
+            background: none;
+            }
+            button[type="button"]:hover,
+            button[type="submit"]:hover {
+            background: #ddd;
+            }
+            button[type="reset"]:hover {
+            text-decoration: underline;
+            }
+            @media (min-width: 768px) {
+            .tb-cell {
+            width: 800px;
+            }
+            .tb-cell .row {
+            display: table-row;
+            }
+            .tb-cell .row .cell {
+            display: table-cell;
+            border: 1px solid #ddd;
+            padding: 10px;
+            vertical-align: middle;
+            color: #fff;
+            }
+            .tb-cell .row .cell:nth-child(odd) {
+            width: 200px;
+            }
+            .tb-cell .row .cell:nth-child(even) {
+            width: 600px;
+            }
+            input[type="text"],
+            input[type="email"] {
+            width: 300px;
+            }
+            textarea {
+            width: 580px;
+            }
+            /* ** */}
+
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+
+
+<div class="tb-cell mail-form">
+        <form id="form" action="./mail.php" method="post">
+        <div class="row">
+        <div class="cell">
+        <label>name</label>
+        <!--cell--></div>
+        <div class="cell">
+        <input type="text" name="name" required>
+        <!--cell--></div>
+        <!--row--></div>
+        <div class="row">
+        <div class="cell">
+        <label>email</label>
+        <!--cell--></div>
+        <div class="cell">
+        <input type="email" name="email" required>
+        <!--cell--></div>
+        <!--row--></div>
+        <div class="row">
+        <div class="cell">
+        <label>comment</label>
+        <!--cell--></div>
+        <div class="cell">
+        <textarea name="comment" required></textarea>
+        <!--cell--></div>
+        <!--row--></div>
+        <div class="row">
+        <div class="cell">
+        &nbsp;
+        <!--cell--></div>
+        <div class="cell">
+        <button type="submit" id="sbtn" name="action" value="post">入力内容を確認</button>
+        <button type="reset" id="rbtn">リセット</button>
+        <!--cell--></div>
+        <!--row--></div>
+        </form>
+        <!--tb-cell--></div>
+        

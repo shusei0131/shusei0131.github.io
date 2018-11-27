@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MenMap@Mito|水戸ラーメン検索サービス</title>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Noto+Sans+JP:100,300,400|Noto+Serif+JP:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="./css/menmap.css">
+    <!-- jQuery.jsの読み込み -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    
+    <!-- スムーズスクロール部分の記述 -->
+    <script>
+        $(function(){
+            // #で始まるアンカーをクリックした場合に処理
+            $('a[href^=#]').click(function() {
+                // スクロールの速度
+                var speed = 300; // ミリ秒
+                // アンカーの値取得
+                var href= $(this).attr("href");
+                // 移動先を取得
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                // 移動先を数値で取得
+                var position = target.offset().top;
+                // スムーススクロール
+                $('body,html').animate({scrollTop:position}, speed, 'swing');
+                return false;
+            });
+        });
+    </script>
+</head>
+<body>
+   <header>
+       <div id="title">
+           <div class="title_line">
+                <h2 class="title_logo">Men Mep @Mito</h2>
+           </div>
+
+            <ul id="nav">
+                <li><a href="#main_map">
+                    <div class="nav_btn gotomap"><p>地図から探す</p></div>
+                </a></li>
+                <li><a href="#collection">
+                    <div class="nav_btn collection"><p>麺コレクション</p></div>
+                </a></li>
+                <li><a href="info.html">
+                    <div class="nav_btn about"><p><span>MenMap@Mito</span>について</p></div>
+                </a></li>
+            </ul>
+
+            <div id="down_mark"></div>
+
+       </div>
+    </header>
+
+    <div id="main_map">
+        <div id="map_title">
+            <p>地図から見つける</p>
+            <span>- Find your Men -</span>
+        </div>
+        <div id="map_area">
+            <div id="gmap"></div>
+            <ul id="map_btn">
+                <li><a href="#">
+                    <div class="map_rbn"><h5>水戸駅周辺</h5><p>エリア</p></div>
+                </a></li>
+                <li><a href="#">
+                    <div class="map_rbn"><h5>上水戸・茨大</h5><p>エリア</p></div>
+                </a></li>
+                <li><a href="#">
+                    <div class="map_rbn"><h5>赤塚・内原</h5><p>エリア</p></div>
+                </a></li>
+                <li><a href="#">
+                    <div class="map_rbn"><h5>県庁・南水戸</h5><p>エリア</p></div>
+                </a></li>
+                <li><a href="#">
+                    <div class="map_rbn"><h5>常澄・西水戸</h5><p>エリア</p></div>
+                </a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- main_map -->
+    
+    <div id="collection">
+        <div id="co_title">
+            <p>麺コレクション</p>
+            <span>- collection -</span>
+        </div>
+        <div id="hash_area">
+            <a class="hash area1" href=""><p># 水戸駅周辺</p></a>
+            <a class="hash area2" href=""><p># 上水戸・茨大</p></a>
+            <a class="hash area3" href=""><p># 赤塚・内原</p></a>
+            <a class="hash area4" href=""><p># 県庁・南水戸</p></a>
+            <a class="hash area5" href=""><p># 常澄・西水戸</p></a>
+        </div>
+
+        <ul class="card_area">
+            <li class="men1"><a href="./men001.html">
+                <div class="card">
+                    <div class="men_img men001_img"></div>
+                    <p class="men_name1">海老汐らぁめん</p>
+                    <p class="men_name2"></p>
+                    <p class="shop_name"><strong>らぁめん</strong>蓮華</p>
+                </div>
+            </a></li>
+            <li class="men2"><a href="./men001.html">
+                <div class="card">
+                    <div class="men_img men002_img"></div>
+                    <p class="men_name1">特製龍ひげ</p>
+                    <p class="men_name2">塩らぁめん</p>
+                    <p class="shop_name"><strong></strong>龍のひげ</p>
+                </div>
+            </a></li>
+            <li class="men3"><a href="./men001.html">
+                <div class="card">
+                    <div class="men_img men003_img"></div>
+                    <p class="men_name1">鶏白湯</p>
+                    <p class="men_name2"></p>
+                    <p class="shop_name"><strong>鶏そば専門店</strong>とりだけ</p>
+                </div>
+            </a></li>
+            <li class="men4"><a href="./men001.html">
+                <div class="card">
+                    <div class="men_img men4_img"></div>
+                    <p class="men_name1"></p>
+                    <p class="men_name2"></p>
+                    <p class="shop_name"><strong></strong></p>
+                </div>
+            </a></li>
+            <li class="men5"><a href="./men001.html">
+                <div class="card">
+                    <div class="men_img men5_img"></div>
+                    <p class="men_name1"></p>
+                    <p class="men_name2"></p>
+                    <p class="shop_name"><strong></strong></p>
+                </div>
+            </a></li>
+            <li class="men6"><a href="./men001.html">
+                <div class="card">
+                    <div class="men_img men6_img"></div>
+                    <p class="men_name1"></p>
+                    <p class="men_name2"></p>
+                    <p class="shop_name"><strong></strong></p>
+                </div>
+            </a></li>
+            <li class="men7"><a href="./men001.html">
+                <div class="card">
+                    <div class="men_img men7_img"></div>
+                    <p class="men_name1"></p>
+                    <p class="men_name2"></p>
+                    <p class="shop_name"><strong></strong></p>
+                </div>
+            </a></li>
+            <li class="men8"><a href="./men001.html">
+                <div class="card">
+                    <div class="men_img men8_img"></div>
+                    <p class="men_name1"></p>
+                    <p class="men_name2"></p>
+                    <p class="shop_name"><strong></strong></p>
+                </div>
+            </a></li>
+            <li class="men9"><a href="./men001.html">
+                <div class="card">
+                    <div class="men_img men9_img"></div>
+                    <p class="men_name1"></p>
+                    <p class="men_name2"></p>
+                    <p class="shop_name"><strong></strong></p>
+                </div>
+            </a></li>
+            <li class="men10"><a href="./men001.html">
+                <div class="card">
+                    <div class="men_img men10_img"></div>
+                    <p class="men_name1"></p>
+                    <p class="men_name2"></p>
+                    <p class="shop_name"><strong></strong></p>
+                </div>
+            </a></li>
+            <li class="men11"><a href="./men001.html">
+                <div class="card">
+                    <div class="men_img men11_img"></div>
+                    <p class="men_name1"></p>
+                    <p class="men_name2"></p>
+                    <p class="shop_name"><strong></strong></p>
+                </div>
+            </a></li>
+            <li class="men12"><a href="./men001.html">
+                <div class="card">
+                    <div class="men_img men12_img"></div>
+                    <p class="men_name1"></p>
+                    <p class="men_name2"></p>
+                    <p class="shop_name"><strong></strong></p>
+                </div>
+            </a></li>
+        </ul>
+
+    </div>
+    <!-- #collection -->
+
+    <footer>
+        <p>Copyright <span>Men Map @Mito</span> All Rights Reserved.</p>
+    </footer>
+    <script>
+        var map;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('gmap'), {
+            center: {lat: 36.3667782, lng: 140.4621334},
+            zoom: 12.5
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-3d2nxhRolq4FO4pLmfE0F6_i7X6dxyk&callback=initMap"async defer></script> 
+</body>
+</html>
